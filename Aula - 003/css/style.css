@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Times New Roman', Times, serif;
+}
+
+/* cabeçalho */
+header{
+    background-color: cornflowerblue;
+    text-align: center;
+    color: aliceblue;
+    padding: 20px 30px;
+}
+
+/* container de links */
+nav{
+    background-color: dimgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-direction: row;
+} 
+
+
+/* Texto */
+main{
+    display: flex;
+    flex-direction: row;
+}
+main article, section, aside{
+    padding: 10px;
+}
+article{
+    background-color: aqua;
+    width: 30%;
+}
+
+section{
+    background-color: blueviolet;
+    width: 40%;
+}
+aside{
+    background-color: chartreuse;
+    width: 30%;
+}
+
+/* rodape */
+footer{
+    background-color: chocolate;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width:500px) {
+    nav{
+        flex-direction: column;
+    }
+    nav .flex-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main{
+        flex-direction: column;
+        text-align: center;
+    }
+    article, section, aside{
+        width: 100%;
+    }
+}

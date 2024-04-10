@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 1050px;
+    width: 100%;
+}
+
+p {
+    color: blue;
+}
+
+.cores #um {
+    color: blue;
+    background-color: yellow;
+}
+
+.cores #dois {
+    color: red;
+}
+
+.cores #tres {
+    color: green
+}
+
+.cores #quatro {
+    color: blue;
+}
+
+.cores #cinco {
+    color: blue;
+}
+
+table, th, td {
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+}
+table td {
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.botao {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-top: 30%;
+}
+.botao input {
+    padding: 5px 30px;
+    border-radius: 20px;
+    font-weight: 700;
+}
